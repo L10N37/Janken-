@@ -1,5 +1,7 @@
-
-
+function updateScoreboard(computerScore, playerScore) {
+  document.querySelector('.computer_score').textContent = computerScore;
+  document.querySelector('.player_score').textContent = playerScore;
+}
 
 function deleteHands() {
     var deletePlayerHand = document.getElementById('playerHand');
@@ -80,7 +82,7 @@ enemy=(enemyhand[randomIndex]);
 
 
   // overlay chosen hand over enemy on bg image
-if (enemy==1) {
+  if (enemy==1) {
   var img = document.createElement("img");
   img.src = "./assets/images/paper.png";
   var src = document.getElementById("enemyHand");

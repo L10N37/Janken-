@@ -33,3 +33,24 @@
   top: 350px;
   left: 915px;
 }
+
+p{
+font-size:32px;
+font-weight:bolder;
+}
+
+#scores{
+position: absolute;
+top: 500px;
+left: 300px;
+border: solid rgb(0, 255, 30);
+}
+
+.computerscore{
+
+}
+
+.playerscore{
+
+
+}
