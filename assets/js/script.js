@@ -26,19 +26,19 @@ else if (selection<1||selection>3) {
 // overlay chosen hand over player on bg image
 if (selection==paper) {
 var img = document.createElement("img");
-img.src = "../janken/assets/images/paper.png";
+img.src = img.src = "./assets/images/paper.png";
 var src = document.getElementById("chosenHand");
 src.appendChild(img);
 }
 if (selection==scissors) {
 var img = document.createElement("img");
-img.src = "../janken/assets/images/scissors.png";
+img.src = "./assets/images/scissors.png";
 var src = document.getElementById("chosenHand");
 src.appendChild(img);
 }
 if (selection==rock) {
 var img = document.createElement("img");
-img.src = "../janken/assets/images/rock.png";
+img.src = "./assets/images/rock.png";
 var src = document.getElementById("chosenHand");
 src.appendChild(img);
 }
