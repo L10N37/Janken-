@@ -53,23 +53,22 @@ enemy=(enemyhand[randomIndex]);
   // overlay chosen hand over enemy on bg image
 if (enemy==1) {
   var img = document.createElement("img");
-  img.src = "../janken/assets/images/paper.png";
+  img.src = "./assets/images/paper.png";
   var src = document.getElementById("chosenHand");
   src.appendChild(img);
   }
   if (enemy==2) {
   var img = document.createElement("img");
-  img.src = "../janken/assets/images/scissors.png";
+  img.src = "./assets/images/scissors.png";
   var src = document.getElementById("chosenHand");
   src.appendChild(img);
   }
   if (enemy==3) {
   var img = document.createElement("img");
-  img.src = "../janken/assets/images/rock.png";
+  img.src = "./assets/images/rock.png";
   var src = document.getElementById("chosenHand");
   src.appendChild(img);
   }
-
 
 // Draw Case
 if (enemy==selection){window.alert("draw")}
@@ -81,5 +80,4 @@ else if (enemy==paper&&selection==rock){window.alert("...you lose!")}
 else if (selection==scissors&&enemy==paper){window.alert("You Win!!")}
 else if (selection==rock&&enemy==scissors){window.alert("You Win!!")}
 else if (selection=paper&&enemy==rock){window.alert("You Win!!")}
-
 }
