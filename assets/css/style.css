@@ -50,11 +50,22 @@ border-radius: 5%;
 padding: 10px;
 }
 
-.computerscore{
-
+.computer_score{
+font-weight: bolder;
+font-size: 32px;
+color: green;
+position: absolute;
+top: 95px;
+padding: 16px;
+left: 290px;
 }
 
-.playerscore{
-
-
+.player_score{
+  font-weight: bolder;
+  font-size: 36px;
+  color: yellow;
+  position: absolute;
+  top: 28px;
+  padding: 16px;
+  left: 288px;
 }

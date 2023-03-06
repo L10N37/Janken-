@@ -1,4 +1,7 @@
-function updateScoreboard(computerScore, playerScore) {
+let EnemyScoreGlobal=0;
+let PlayerScoreGlobal =0;
+
+function updateScoreboard(computerScore, playerScore, draw) {
   document.querySelector('.computer_score').textContent = computerScore;
   document.querySelector('.player_score').textContent = playerScore;
 }
@@ -101,15 +104,25 @@ enemy=(enemyhand[randomIndex]);
   src.appendChild(img);
   }
 
+let win = false;
+let lose = false;
 // Draw Case
 if (enemy==selection){window.alert("draw")}
 // Lose Cases
-else if (enemy==scissors&&selection==paper){window.alert("...you lose!")}
-else if (enemy==rock&&selection==scissors){window.alert("...you lose!")}
-else if (enemy==paper&&selection==rock){window.alert("...you lose!")}
+else if (enemy==scissors&&selection==paper){window.alert("...you lose!"), lose=true}
+else if (enemy==rock&&selection==scissors){window.alert("...you lose!"),lose=true}
+else if (enemy==paper&&selection==rock){window.alert("...you lose!"),lose=true}
 // Win Cases
-else if (selection==scissors&&enemy==paper){window.alert("You Win!!")}
-else if (selection==rock&&enemy==scissors){window.alert("You Win!!")}
-else if (selection=paper&&enemy==rock){window.alert("You Win!!")}
+else if (selection==scissors&&enemy==paper){window.alert("You Win!!"),win=true}
+else if (selection==rock&&enemy==scissors){window.alert("You Win!!"),win=true}
+else if (selection=paper&&enemy==rock){window.alert("You Win!!"),win=true}
+
+if (win){
+PlayerScoreGlobal++;
+}
+else if (lose){
+EnemyScoreGlobal++;
+}
+updateScoreboard(PlayerScoreGlobal, EnemyScoreGlobal);
  
 }
