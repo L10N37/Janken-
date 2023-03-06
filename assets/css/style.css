@@ -22,14 +22,14 @@
   cursor: pointer;
 }
 
-#chosenHand{
+#playerHand{
   position:absolute;
   top: 350px;
   left: 190px;
-
 }
 
-img{
-  margin-right: 640px;
+#enemyHand{
+  position:absolute;
+  top: 350px;
+  right: 446px;
 }
-

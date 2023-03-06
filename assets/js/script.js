@@ -27,19 +27,19 @@ else if (selection<1||selection>3) {
 if (selection==paper) {
 var img = document.createElement("img");
 img.src = img.src = "./assets/images/paper.png";
-var src = document.getElementById("chosenHand");
+var src = document.getElementById("playerHand");
 src.appendChild(img);
 }
 if (selection==scissors) {
 var img = document.createElement("img");
 img.src = "./assets/images/scissors.png";
-var src = document.getElementById("chosenHand");
+var src = document.getElementById("playerHand");
 src.appendChild(img);
 }
 if (selection==rock) {
 var img = document.createElement("img");
 img.src = "./assets/images/rock.png";
-var src = document.getElementById("chosenHand");
+var src = document.getElementById("playerHand");
 src.appendChild(img);
 }
 
@@ -54,19 +54,19 @@ enemy=(enemyhand[randomIndex]);
 if (enemy==1) {
   var img = document.createElement("img");
   img.src = "./assets/images/paper.png";
-  var src = document.getElementById("chosenHand");
+  var src = document.getElementById("enemyHand");
   src.appendChild(img);
   }
   if (enemy==2) {
   var img = document.createElement("img");
   img.src = "./assets/images/scissors.png";
-  var src = document.getElementById("chosenHand");
+  var src = document.getElementById("enemyHand");
   src.appendChild(img);
   }
   if (enemy==3) {
   var img = document.createElement("img");
   img.src = "./assets/images/rock.png";
-  var src = document.getElementById("chosenHand");
+  var src = document.getElementById("enemyHand");
   src.appendChild(img);
   }
 
