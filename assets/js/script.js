@@ -1,3 +1,6 @@
+
+
+
 function deleteHands() {
     var deletePlayerHand = document.getElementById('playerHand');
     var deleteEnemyHand= document.getElementById('enemyHand');
