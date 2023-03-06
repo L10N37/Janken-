@@ -1,4 +1,30 @@
+function deleteHands() {
+    var deletePlayerHand = document.getElementById('playerHand');
+    var deleteEnemyHand= document.getElementById('enemyHand');
+    deletePlayerHand.parentNode.removeChild(deletePlayerHand);
+    deleteEnemyHand.parentNode.removeChild(deleteEnemyHand);
+  }
+  
+ // <div id="playerHand"></div>  <-- create in HTML using JS so we can destroy at will! [x]
+ // <div id="enemyHand"></div>   <-- create in HTML using JS so we can destroy at will! [x]
+function createHands() {
+  let Player = document.createElement("div");
+  Player.id = "playerHand";
+  document.body.appendChild(Player);
+
+  let Enemy = document.createElement("div");
+  Enemy.id = "enemyHand";
+  document.body.appendChild(Enemy);
+}
+
 function play(){
+
+var elementExists = document.getElementById("playerHand");
+if (elementExists){
+deleteHands();
+}
+
+createHands();
 
 let selection = prompt("Paper Scissors Or Rock? (1, 2, 3?)")
 console.log("Player selected: " + selection);
@@ -80,4 +106,5 @@ else if (enemy==paper&&selection==rock){window.alert("...you lose!")}
 else if (selection==scissors&&enemy==paper){window.alert("You Win!!")}
 else if (selection==rock&&enemy==scissors){window.alert("You Win!!")}
 else if (selection=paper&&enemy==rock){window.alert("You Win!!")}
+ 
 }
