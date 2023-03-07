@@ -50,7 +50,7 @@ border-radius: 5%;
 padding: 10px;
 }
 
-.computer_score{
+.player_score{
 font-weight: bolder;
 font-size: 32px;
 color: green;
@@ -60,7 +60,7 @@ padding: 16px;
 left: 290px;
 }
 
-.player_score{
+.computer_score{
   font-weight: bolder;
   font-size: 36px;
   color: yellow;
